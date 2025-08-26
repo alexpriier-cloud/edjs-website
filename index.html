@@ -151,9 +151,9 @@
 
     /* Achievements Section Styles */
     .achievements-section {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: #FFDBD2;
       padding: 80px 0;
-      color: white;
+      color: #2c3e50;
     }
 
     /* Session Cards Hover Effects */
@@ -191,15 +191,15 @@
     .achievement-number {
       font-size: 3.5rem;
       font-weight: 700;
-      color: #fff;
+      color: #2c3e50;
       display: block;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      text-shadow: none;
     }
 
     .achievement-label {
       font-size: 1.1rem;
-      color: rgba(255,255,255,0.9);
+      color: #2c3e50;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 500;
@@ -281,13 +281,12 @@
 
     /* Hero Title Styles */
     .vs-hero__title--main {
-      color: #000000 !important;
-      text-shadow: none;
-      filter: none;
+      color: white !important;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
     .vs-hero__title--main span {
-      color: #000000 !important;
+      color: white !important;
     }
 
     /* About Section Bottom Logo */
@@ -897,6 +896,50 @@
       height: 60px !important;
     }
     
+    /* Hero Shape Container Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-shape-container {
+    width: 350px !important;
+    height: 350px !important;
+  }
+  
+  .hero-shape-container h1 {
+    font-size: 32px !important;
+  }
+  
+  .hero-shape-container p {
+    font-size: 14px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .hero-shape-container .hero-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  
+  .hero-shape-container .vs-hero__image {
+    width: 80px !important;
+    height: 80px !important;
+    bottom: -15px !important;
+    right: -15px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-shape-container {
+    width: 280px !important;
+    height: 280px !important;
+  }
+  
+  .hero-shape-container h1 {
+    font-size: 24px !important;
+  }
+  
+  .hero-shape-container .vs-hero__title--sub {
+    font-size: 14px !important;
+  }
+}
+    
     /* Rocket Animation */
     .rocket-animation {
       position: fixed;
@@ -1076,9 +1119,21 @@
                   <li><a href="class.html">Class</a></li>
                   <li><a href="class-details.html">Class Details</a></li>
                   <li><a href="blog.html">Blog</a></li>
-                  <li><a href="blog-details.html">Blog Details</a></li>
-                  <li><a href="events.html">Events</a></li>
-                  <li><a href="event-details.html">Event Details</a></li>
+                  <nav class="main-menu menu-style2 d-none d-lg-block">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="about.html">À Propos</a></li>
+                  <li><a href="spectacles.html">Spectacles</a></li>
+                  <li><a href="gallery.html">Galerie</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <li><a href="javascript:void(0)">Page List 4</a>
+                <ul>
+                  <li><a href="wishlist.html">Wishlist</a></li>
+                  <li><a href="coming-soon.html">Coming Soon</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </li>
               <li><a href="javascript:void(0)">Page List 3</a>
@@ -1420,113 +1475,53 @@
             <div class="col-auto">
               <nav class="main-menu d-none d-lg-block">
                 <ul>
-                  <li class="menu-item-has-children">
+                  <li>
                     <a class="vs-svg-assets" href="index.html">
                       ACCUEIL
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                    <ul class="sub-menu">
-                      <li><a href="index.html">Home</a></li>
-                    </ul>
                   </li>
-                  <li class="menu-item-has-children">
+                  <li>
                     <a class="vs-svg-assets" href="about.html">
                       À PROPOS
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                    <ul class="sub-menu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="why-choose-us.html">Why Choose Us</a></li>
-                      <li><a href="service-details.html">Service Details</a></li>
-                    </ul>
                   </li>
-                  <li class="menu-item-has-children mega-menu-wrap">
-                    <a class="vs-svg-assets" href="javascript:void(0)">
-                      Pages
+                  <li>
+                    <a class="vs-svg-assets" href="spectacles.html">
+                      SPECTACLES
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                    <ul class="mega-menu">
-                      <li><a href="javascript:void(0)">Page List 1</a>
-                        <ul>
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="about.html">About Us</a></li>
-                          <li><a href="gallery.html">Gallery</a></li>
-                          <li><a href="service-details.html">Service Details</a></li>
-                          <li><a href="team.html">Teachers</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="javascript:void(0)">Page List 2</a>
-                        <ul>
-                          <li><a href="team-details.html">Single Teacher</a></li>
-                          <li><a href="class.html">Class</a></li>
-                          <li><a href="class-details.html">Class Details</a></li>
-                          <li><a href="blog.html">Blog</a></li>
-                          <li><a href="blog-details.html">Blog Details</a></li>
-                          <li><a href="events.html">Events</a></li>
-                          <li><a href="event-details.html">Event Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="javascript:void(0)">Page List 3</a>
-                        <ul>
-                          <li><a href="registration.html">Admission</a></li>
-                          <li><a href="shop.html">Shop</a></li>
-                          <li><a href="shop-details.html">Shop Details</a></li>
-                          <li><a href="auth.html">Auth</a></li>
-                          <li><a href="myaccount.html">My Account</a></li>
-                          <li><a href="cart.html">Cart</a></li>
-                          <li><a href="checkout.html">Checkout</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="javascript:void(0)">Page List 4</a>
-                        <ul>
-                          <li><a href="wishlist.html">Wishlist</a></li>
-                          <li><a href="coming-soon.html">Coming Soon</a></li>
-                          <li><a href="contact.html">Contact Us</a></li>
-                          <li><a href="404.html">404 Page</a></li>
-                        </ul>
-                      </li>
-                    </ul>
                   </li>
-                  <li class="menu-item-has-children">
-                    <a class="vs-svg-assets" href="shop.html">
-                      shop
+                  <li>
+                    <a class="vs-svg-assets" href="gallery.html">
+                      GALERIE
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                    <ul class="sub-menu">
-                      <li><a href="shop.html">Main Shop</a></li>
-                      <li><a href="shop-right-sidebar.html">Shop Right</a></li>
-                      <li><a href="shop-full.html">Shop Full</a></li>
-                      <li><a href="shop-details.html">Shop Details</a></li>
-                    </ul>
                   </li>
-                  <li class="menu-item-has-children">
+                  <li>
                     <a class="vs-svg-assets" href="blog.html">
-                      blog
+                      BLOG
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="blog-details.html">Blog Details</a></li>
-                    </ul>
                   </li>
                   <li>
                     <a class="vs-svg-assets" href="contact.html">
-                      contact
+                      CONTACT
                       <svg xmlns="http://www.w3.org/2000/svg" width="87" height="31" viewBox="0 0 87 31" fill="none">
                         <path d="M0 4.14031C0 1.87713 1.87602 0.0646902 4.13785 0.142684L83.1379 2.86682C85.2921 2.94111 87 4.70896 87 6.86445V25.0909C87 27.2642 85.2647 29.0399 83.0919 29.0898L4.09193 30.9059C1.84739 30.9575 0 29.1521 0 26.907V4.14031Z" fill="#70167E"></path>
                       </svg>
                     </a>
-                  </li>
                 </ul>
               </nav>
             </div>
@@ -1610,28 +1605,34 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="vs-hero__bg vs-hero__bg--zoom background-image" style="background-image: url('assets/img/Les_Trois_Brigands_Web_061.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; width: 100%; position: absolute; top: 0; left: 0; z-index: -1;"></div>
+            <!-- Black Overlay -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); z-index: 0;"></div>
             <div class="container container--custom">
-              <div class="vs-hero__content">
-                <div class="vs-hero__shape">
-                  <div class="vs-hero__shape--bg vs-hero__anim" data-bg-src="assets/img/hero/hero-shape-1-no-grass.svg"></div>
-                  <span class="vs-hero__title--sub">
-                    La culture accessible !
+              <div class="vs-hero__content" style="position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; min-height: 100vh;">
+                <!-- Hero Content -->
+                <div class="hero-content-container" style="
+                  position: relative;
+                  max-width: 800px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+                  padding: 80px 40px;
+                ">
+                  <span class="vs-hero__title--sub" style="color: white; font-size: 20px; margin-bottom: 20px; font-weight: 500;">
+                    L'art vivant à portée des enfants
                   </span>
-                  <h1 class="vs-hero__title--main">
-                    Plateforme Culturelle <span>EDJS</span>
+                  <h1 class="vs-hero__title--main" style="color: white; font-size: 64px; font-weight: bold; margin-bottom: 25px; line-height: 1.2;">
+                    École du Jeune <span style="color: white;">Spectateur</span>
                   </h1>
-                  <p class="vs-hero__desc vs-hero__anim" data-aos="fade-up" data-aos-delay="600">
-                    Connectons les spectacles avec les écoles, associations et familles au Maroc
+                  <p class="vs-hero__desc" style="color: white; font-size: 18px; margin-bottom: 35px; line-height: 1.6; opacity: 0.9;" data-aos="fade-up" data-aos-delay="600">
+                    Depuis 2013, nous initions des milliers d'enfants au théâtre et aux arts vivants à travers un parcours ludique, éducatif et culturel unique au Maroc.
                   </p>
-                  <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
-                    <a href="contact.html" class="vs-btn vs-hero__btn vs-hero__anim hero-btn-primary"><span class="vs-btn__border"></span>Découvrir</a>
-                    <a href="about.html" class="vs-btn style2 ms-3 hero-btn-secondary"><span class="vs-btn__border"></span>En savoir plus</a>
+                  <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800" style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                    <a href="contact.html" class="vs-btn hero-btn-primary" style="background: #BDCF00; color: #000; border: none; padding: 15px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(189,207,0,0.3);">Découvrir Plus</a>
+                    <a href="about.html" class="vs-btn hero-btn-secondary" style="background: transparent; color: white; border: 2px solid white; padding: 15px 30px; border-radius: 30px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">Commencer</a>
                   </div>
-                </div>
-                
-                <!-- Hero Image Element -->
-                <div class="vs-hero__image" data-aos="fade-left" data-aos-delay="1000">
-                  <img src="assets/edjs img/Casse-Noisette_Web_013-1024x683.webp" alt="EDJS Spectacle" class="hero-feature-image">
                 </div>
               </div>
             </div>
@@ -1828,8 +1829,8 @@
           <div class="col-lg-8 mx-auto">
             <div class="vs-title text-center title-anime animation-style2">
               <div class="title-anime__wrap">
-                <span class="vs-title__sub">Pourquoi EDJS</span>
-                <h2 class="vs-title__main">La Culture <span>Accessible</span></h2>
+                <span class="vs-title__sub">Pourquoi choisir EDJS ?</span>
+                <h2 class="vs-title__main">Nous facilitons l'accès à la culture pour tous</h2>
               </div>
             </div>
           </div>
@@ -1853,7 +1854,7 @@
                     <a class="vs-service__heading--link" href="service-details.html">
                       <h3 class="vs-service__heading">Écoles Publiques</h3>
                     </a>
-                    <p class="vs-service__text">Spectacles éducatifs adaptés aux programmes scolaires avec tarifs préférentiels pour les établissements publics.</p>
+                    <p class="vs-service__text">Accès gratuit aux spectacles pour les écoles publiques. Des représentations adaptées aux programmes scolaires avec un accompagnement pédagogique complet.</p>
                     <a href="service-details.html" class="vs-service__link">
                     </a>
                     <a href="service-details.html" class="vs-service__link">
@@ -1880,7 +1881,7 @@
                     <a class="vs-service__heading--link" href="service-details.html">
                       <h3 class="vs-service__heading">Écoles Privées</h3>
                     </a>
-                    <p class="vs-service__text">Programmes culturels sur mesure pour les écoles privées avec accompagnement pédagogique personnalisé.</p>
+                    <p class="vs-service__text">Tarifs préférentiels et programmes culturels sur mesure. Un accompagnement pédagogique personnalisé pour enrichir l'expérience éducative.</p>
                     <a href="service-details.html" class="vs-service__link">
                     </a>
                     <a href="service-details.html" class="vs-service__link">
@@ -1907,7 +1908,7 @@
                     <a class="vs-service__heading--link" href="associations.html">
                       <h3 class="vs-service__heading">Associations</h3>
                     </a>
-                    <p class="vs-service__text">Partenariats avec les associations pour promouvoir l'accès à la culture théâtrale dans la communauté.</p>
+                    <p class="vs-service__text">Programmes spéciaux pour les associations et centres communautaires. Tarifs adaptés pour rendre la culture accessible à tous les publics.</p>
                     <a href="associations.html" class="vs-service__link">
                       <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.39045 17.9495L17.6245 3.81022L11.9467 3.41092C11.6162 3.39253 11.307 3.24133 11.0897 2.99157C10.3795 2.16137 11.0268 0.887081 12.116 0.97149L20.7679 1.567C21.4447 1.61318 21.9555 2.20013 21.9077 2.87686L21.3019 11.5281C21.2154 13.1944 18.7024 13.0128 18.8562 11.3514L19.2524 5.64459L3.0003 19.7995C2.48691 20.2625 1.69228 20.2096 1.24372 19.6835C0.800172 19.1667 0.86807 18.3864 1.39045 17.9495Z" fill="currentColor" />
@@ -1932,7 +1933,7 @@
                     <a class="vs-service__heading--link" href="families.html">
                       <h3 class="vs-service__heading">Familles</h3>
                     </a>
-                    <p class="vs-service__text">Réservation en ligne simple pour les familles avec billets QR instantanés et paiement sécurisé.</p>
+                    <p class="vs-service__text">Réservation en ligne simple avec billets QR instantanés. Paiement sécurisé par carte CMI et possibilité de modification jusqu'à 27h avant le spectacle.</p>
                     <a href="families.html" class="vs-service__link">
                     </a>
                     <a href="families.html" class="vs-service__link">
@@ -2036,62 +2037,17 @@
                 <div class="title-anime__wrap">
                   <span class="vs-title__sub">Notre Mission</span>
                   <h2 class="vs-title__main">
-                    Connecter la <span>Culture</span> au Maroc
+                    Former un public éclairé et passionné par les arts vivants.
                   </h2>
                 </div>
               </div>
               <div class="vs-about--story">
-                <div class="vs-about--story__tab mb-30">
-                  <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="history-tab" data-bs-toggle="tab" data-bs-target="#history-tab-pane" type="button" role="tab" aria-controls="history-tab-pane" aria-selected="true" style="background-color: #BDCF00; border-color: #BDCF00;">
-                        Notre Histoire
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                        Écoles
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                        Familles
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab" tabindex="0">
-                    <p class="vs-about__text vs-text">Pre-school has open door and also offer free trial sessios that
-                      child
-                      Creative Learning
-                      Opportunity For Kids Hised sedaugue felis Phasellus gravida lacus quis eros.</p>
-                    <ul class="vs-list pt-15 mb-35">
-                      <li>Opportunités d'Apprentissage pour les Enfants</li>
-                      <li>Votre Enfant Participera</li>
-                    </ul>
-                    <a href="contact.html" class="vs-btn"><span class="vs-btn__border"></span>contact us</a>
-                  </div>
-                  <div class="tab-pane fade" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                    <p class="vs-about__text vs-text">Pre-school has open door and also offer free trial sessios that
-                      child
-                      Creative Learning
-                      Opportunity For Kids Hised sedaugue felis Phasellus gravida lacus quis eros.</p>
-                    <ul class="vs-list pt-15 mb-35">
-                      <li>Opportunités d'Apprentissage pour les Enfants</li>
-                      <li>Votre Enfant Participera</li>
-                    </ul>
-                    <a href="contact.html" class="vs-btn"><span class="vs-btn__border"></span>contact us</a>
-                  </div>
-                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                    <p class="vs-about__text vs-text">Les familles peuvent réserver directement via notre plateforme. Paiement sécurisé par carte CMI, billets QR instantanés, possibilité de modification jusqu'à 27h avant le spectacle.</p>
-                    <ul class="vs-list pt-15 mb-35">
-                      <li>Réservation en ligne simple</li>
-                      <li>Spectacles familiaux de qualité</li>
-                    </ul>
-                    <a href="contact.html" class="vs-btn"><span class="vs-btn__border"></span>Réserver</a>
-                  </div>
-                </div>
+                <p class="vs-about__text vs-text">Fondée à Casablanca en 2013 par Nezha Belkady, l'École du Jeune Spectateur a déjà permis à plus de 150 000 enfants, issus d'écoles publiques, privées et associations, de découvrir des spectacles inédits. Ce programme est bien plus qu'une simple sortie culturelle : c'est un véritable parcours pédagogique, artistique et humain.</p>
+                <ul class="vs-list pt-15 mb-35">
+                  <li>Découverte artistique : un accès privilégié aux pièces nationales et internationales adaptées à leur âge.</li>
+                  <li>Éducation par l'art : apprendre les codes du spectacle vivant et développer leur esprit critique.</li>
+                </ul>
+                <a href="contact.html" class="vs-btn"><span class="vs-btn__border"></span>Contactez-nous</a>
               </div>
             </div>
           </div>
@@ -2111,34 +2067,34 @@
         <div class="row">
           <div class="col-12 text-center mb-5">
             <div class="vs-title">
-              <span class="vs-title__sub" style="color: rgba(255,255,255,0.8);">Nos Réalisations</span>
-              <h2 class="vs-title__main" style="color: white;">Nos <span style="color: #ffd93d;">Succès</span> en Chiffres</h2>
+              <span class="vs-title__sub" style="color: rgba(255,255,255,0.8);">Nos résultats en chiffres</span>
+              <h2 class="vs-title__main" style="color: white;">Plus de 10 ans d'expérience au service des enfants et de l'art vivant.</h2>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="achievement-item wow animate__fadeInUp" data-wow-delay="0.1s">
-              <span class="achievement-number" data-count="150">150+</span>
-              <span class="achievement-label">Spectacles Organisés</span>
+              <span class="achievement-number" data-count="400">400+</span>
+              <span class="achievement-label">Représentations</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="achievement-item wow animate__fadeInUp" data-wow-delay="0.2s">
-              <span class="achievement-number" data-count="50000">50K+</span>
-              <span class="achievement-label">Enfants Touchés</span>
+              <span class="achievement-number" data-count="150000">150 000+</span>
+              <span class="achievement-label">Enfants bénéficiaires</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="achievement-item wow animate__fadeInUp" data-wow-delay="0.3s">
-              <span class="achievement-number" data-count="200">200+</span>
-              <span class="achievement-label">Écoles Partenaires</span>
+              <span class="achievement-number" data-count="50">50+</span>
+              <span class="achievement-label">Partenaires & associations</span>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
             <div class="achievement-item wow animate__fadeInUp" data-wow-delay="0.4s">
-              <span class="achievement-number" data-count="15">15+</span>
-              <span class="achievement-label">Villes Couvertes</span>
+              <span class="achievement-number" data-count="10">10+</span>
+              <span class="achievement-label">ans d'existence</span>
             </div>
           </div>
         </div>
@@ -2175,44 +2131,44 @@
                     <time class="vs-session__time" datetime="14:00">Casablanca - 25 Jan 14h00</time>
                   </div>
                   <span class="vs-session__icon">
-                  <img src="assets/img/icon edjs-11.png" alt="session icon" style="width: 40px; height: 40px;">
-                </span>
+                    <span style="font-size: 16px; font-weight: bold; color: #BDCF00;">JAN</span>
+                  </span>
                 </div>
               </div>
               <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.3s">
                 <div class="vs-session">
                   <img class="vs-session__bg" src="assets/img/elements/session-main-block.png" alt="">
                   <div class="vs-session__content">
-                    <h3 class="vs-session__title">Casse-Noisette</h3>
-                    <time class="vs-session__time" datetime="16:00">Rabat - 26 Jan 16h00</time>
+                    <h3 class="vs-session__title">Le Petit Prince</h3>
+                    <time class="vs-session__time" datetime="16:00">Rabat - 15 Fév 16h00</time>
                   </div>
                   <span class="vs-session__icon">
-                  <img src="assets/img/icon edjs-12.png" alt="session icon" style="width: 40px; height: 40px;">
-                </span>
+                    <span style="font-size: 16px; font-weight: bold; color: #BDCF00;">FÉV</span>
+                  </span>
                 </div>
               </div>
               <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.4s">
                 <div class="vs-session">
                   <img class="vs-session__bg" src="assets/img/elements/session-main-block.png" alt="">
                   <div class="vs-session__content">
-                    <h3 class="vs-session__title">Casse-Noisette</h3>
-                    <time class="vs-session__time" datetime="15:00">Marrakech - 27 Jan 15h00</time>
+                    <h3 class="vs-session__title">Les Trois Brigands</h3>
+                    <time class="vs-session__time" datetime="15:00">Marrakech - 12 Mar 15h00</time>
                   </div>
                   <span class="vs-session__icon">
-                  <img src="assets/img/icon edjs-13.png" alt="session icon" style="width: 40px; height: 40px;">
-                </span>
+                    <span style="font-size: 16px; font-weight: bold; color: #BDCF00;">MAR</span>
+                  </span>
                 </div>
               </div>
               <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.5s">
                 <div class="vs-session">
                   <img class="vs-session__bg" src="assets/img/elements/session-main-block.png" alt="">
                   <div class="vs-session__content">
-                    <h3 class="vs-session__title">Casse-Noisette</h3>
-                    <time class="vs-session__time" datetime="14:30">Fès - 28 Jan 14h30</time>
+                    <h3 class="vs-session__title">Dans la Peau de Cyrano</h3>
+                    <time class="vs-session__time" datetime="14:30">Fès - 20 Avr 14h30</time>
                   </div>
                   <span class="vs-session__icon">
-                  <img src="assets/img/icon edjs-14.png" alt="session icon" style="width: 40px; height: 40px;">
-                </span>
+                    <span style="font-size: 16px; font-weight: bold; color: #BDCF00;">AVR</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -2231,7 +2187,7 @@
             <div class="vs-title text-center title-anime animation-style2">
               <div class="title-anime__wrap">
                 <span class="vs-title__sub">Galerie EDJS</span>
-                <h2 class="vs-title__main">Nos Spectacles Culturels</h2>
+                <h2 class="vs-title__main">Découvrez nos spectacles en images</h2>
               </div>
             </div>
           </div>
@@ -2330,6 +2286,9 @@
               </div>
               <p class="text-white fw-bold text-capitalize font-title vs-text-bolder mb-0">Découvrez nos productions culturelles
               </p>
+              <div class="text-center mt-4">
+                <a href="spectacles.html" class="vs-btn style2"><span class="vs-btn__border"></span>Voir Plus</a>
+              </div>
             </div>
             <div class="vs-pro--slider__direction justify-content-center mb-md-4">
               <div class="vs-pro--slider__next">
@@ -2395,9 +2354,6 @@
       <!-- White Overlay -->
       <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.9); z-index: 1;"></div>
       
-      <div class="vs-class--ele1 vs-x-anim" style="position: relative; z-index: 2;">
-        <img src="assets/img/class/class-ele1.png" alt="class Element">
-      </div>
       <div class="container" style="position: relative; z-index: 2;">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -2607,18 +2563,17 @@
                         </div>
                       </div>
                       <div class="feedback-block__content">
-                        <h4 class="feedback-block__title">Rodja Hartmann</h4>
-                        <span class="feedback-block__title--sub">Vecuro, CEO</span>
+                        <h4 class="feedback-block__title">Mme Fatima Zahra</h4>
+                        <span class="feedback-block__title--sub">Directrice d'école primaire</span>
                         <div class="feedback-block__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="feedback-block__desc">
-                          " Nous nous réjouissons de développer une relation
-                          à long terme avec les enfants et les parents et accueillons
-                          chaleureusement les familles dans nos spectacles
-                          éducatifs "“
+                          "Grâce à EDJS, nos élèves découvrent le théâtre dans d'excellentes conditions. Les spectacles sont adaptés à leur âge et enrichissent leur parcours éducatif. Une expérience inoubliable pour tous !"
                         </p>
                       </div>
                     </div>
@@ -2632,18 +2587,17 @@
                         </div>
                       </div>
                       <div class="feedback-block__content">
-                        <h4 class="feedback-block__title">parker jonson</h4>
-                        <span class="feedback-block__title--sub">google CEO</span>
+                        <h4 class="feedback-block__title">M. Ahmed Benali</h4>
+                        <span class="feedback-block__title--sub">Parent d'élève</span>
                         <div class="feedback-block__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="feedback-block__desc">
-                          " Nous nous réjouissons de développer une relation
-                          à long terme avec les enfants et les parents et accueillons
-                          chaleureusement les familles dans nos spectacles
-                          éducatifs "“
+                          "Mes enfants reviennent enchantés de chaque spectacle EDJS. La qualité artistique et l'approche pédagogique sont remarquables. C'est un véritable éveil culturel pour toute la famille."
                         </p>
                       </div>
                     </div>
@@ -2657,18 +2611,17 @@
                         </div>
                       </div>
                       <div class="feedback-block__content">
-                        <h4 class="feedback-block__title">Mehadi Hassan</h4>
-                        <span class="feedback-block__title--sub">InsightTheme CEO</span>
+                        <h4 class="feedback-block__title">Mme Aicha Idrissi</h4>
+                        <span class="feedback-block__title--sub">Responsable association culturelle</span>
                         <div class="feedback-block__rating">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <p class="feedback-block__desc">
-                          " Nous nous réjouissons de développer une relation
-                          à long terme avec les enfants et les parents et accueillons
-                          chaleureusement les familles dans nos spectacles
-                          éducatifs "“
+                          "EDJS nous permet d'offrir à nos jeunes des expériences culturelles exceptionnelles. L'organisation est parfaite et l'impact sur les enfants est visible. Un partenaire de confiance !"
                         </p>
                       </div>
                     </div>
@@ -2940,7 +2893,7 @@
                   <img src="assets/img/edjs logo black@4x.png" alt="EDJS" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
                 </a>
               </div>
-              <p class="vs-footer__desc text-center text-md-start">
+              <p class="vs-footer__desc text-center text-md-start" style="color: #999999;">
                 EDJS propose des spectacles théâtraux éducatifs et
                 des ateliers créatifs pour enfants.
               </p>
@@ -2961,27 +2914,22 @@
           </div>
           <div class="col-lg-4 col-md-6 wow animate__fadeInUp" data-wow-delay="0.35s">
             <div class="vs-footer__widget">
-              <h3 class="vs-footer__title">Explorer</h3>
+              <h3 class="vs-footer__title" style="color: #cccccc;">Navigation</h3>
               <div class="vs-footer__menu">
                 <ul class="vs-footer__menu--list">
-                  <li><a href="blog.html">Actualités</a></li>
+                  <li><a href="index.html">Accueil</a></li>
                   <li><a href="about.html">À Propos</a></li>
+                  <li><a href="spectacles.html">Spectacles</a></li>
+                  <li><a href="gallery.html">Galerie</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   <li><a href="contact.html">Contact</a></li>
-                  <li><a href="about.html">Centre d'Aide</a></li>
-                  <li><a href="about.html">Devenir Partenaire</a></li>
-                </ul>
-                <ul class="vs-footer__menu--list">
-                  <li><a href="about.html">Rejoindre</a></li>
-                  <li><a href="about.html">Adhésion</a></li>
-                  <li><a href="about.html">Services</a></li>
-                  <li><a href="about.html">Familles</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 wow animate__fadeInUp" data-wow-delay="0.45s">
             <div class="vs-footer__widget">
-              <h3 class="vs-footer__title">Instagram</h3>
+              <h3 class="vs-footer__title" style="color: #cccccc;">Instagram</h3>
               <div class="sidebar-gallery">
                 <div class="gallery-thumb">
                   <img src="assets/img/Les_Trois_Brigands_Web_026.jpg" alt="Gallery Image" class="w-100">
@@ -3023,7 +2971,7 @@
       <div class="container">
         <div class="row gy-3 gx-5 align-items-center justify-content-center justify-content-lg-between flex-column-reverse flex-lg-row">
           <div class="col-md-auto">
-            <p class="vs-footer__copyright mb-0">
+            <p class="vs-footer__copyright mb-0" style="color: #999999;">
               Copyright © <span id="currentYear"></span>
               <a href="index.html">EDJS</a>. Tous droits réservés.
             </p>
