@@ -73,39 +73,342 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --vs-theme-color1: #70167e;
-  --vs-theme-color1-rgb: 112, 22, 126;
-  --vs-theme-color2: #D18109;
-  --vs-theme-color2-rgb: 209, 129, 9;
-  --vs-theme-color3: #a60c56;
-  --vs-theme-color4: #4f830e;
-  --vs-theme-color5: #f8931f;
-  --vs-theme-color6: #F6F1E4;
-  --vs-theme-color7: #FFEFE4;
-  --vs-theme-color8: #FFEFE4;
-  --vs-title-color: #25283e;
-  --vs-title-color-rgb: 37, 40, 62;
-  --vs-text-color: #e1e1e1;
-  --vs-body-color: #5b5a7b;
-  --vs-body-color-rgb: 91, 90, 123;
-  --vs-smoke-color: #eff1f5;
+  /* Primary Colors */
+  --vs-theme-color1: #BDCF00;
+  --vs-theme-color1-rgb: 189, 207, 0;
+  --vs-theme-color2: #BDCF00;
+  --vs-theme-color2-rgb: 189, 207, 0;
+  --vs-theme-color3: #D4E157;
+  --vs-theme-color4: #C8E6C9;
+  --vs-theme-color5: #A5D6A7;
+  --vs-theme-color6: #FFFFFF;
+  --vs-theme-color7: #BDCF00;
+  --vs-theme-color8: #D4E157;
+  /* Text Colors */
+  --vs-title-color: #000000;
+  --vs-title-color-rgb: 0, 0, 0;
+  --vs-text-color: #333333;
+  --vs-body-color: #555555;
+  --vs-body-color-rgb: 85, 85, 85;
+  --vs-smoke-color: #f8f9fa;
   --vs-black-color: #000000;
   --vs-white-color: #ffffff;
   --vs-white-color-rgb: 255, 255, 255;
-  --vs-yellow-color: #fec624;
-  --vs-success-color: #28a745;
+  --vs-yellow-color: #FFF176;
+  --vs-success-color: #BDCF00;
   --vs-error-color: #dc3545;
   --vs-border-color: #e0e0e0;
-  --vs-title-font: "Baloo 2", sans-serif;
-  --vs-body-font: "Roboto", sans-serif;
+  /* Typography */
+  --vs-title-font: "Amatic SC", cursive;
+  --vs-body-font: "Raleway", sans-serif;
+  --vs-handwriting-font: "Kalam", cursive;
   --vs-special-font: "Amatic SC", sans-serif;
   --vs-icon-font: "Font Awesome 6 Pro";
   --vs-main-container: 1220px;
   --vs-container-gutters: 30px;
   --vs-section-space: 120px;
   --vs-section-space-mobile: 80px;
-  --vs-section-title-space: 80px;
-  --ripple-ani-duration: 5s;
+}
+
+/* Hero Image Styling */
+.vs-hero__image {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  max-width: 400px;
+  width: 100%;
+}
+
+.hero-feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hero-feature-image:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Hero Section Fixes */
+@media (max-width: 768px) {
+  .vs-hero__content {
+    padding: 60px 0 !important;
+    text-align: center !important;
+  }
+  
+  .vs-hero__title--main {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .vs-hero__title--sub {
+    font-size: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .vs-hero__desc {
+    font-size: 1rem !important;
+    margin-bottom: 2rem !important;
+    padding: 0 1rem !important;
+  }
+  
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+  }
+  
+  .hero-buttons .vs-btn {
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 0 !important;
+  }
+  
+  .vs-hero__bg {
+    height: 100vh !important;
+    background-position: center !important;
+  }
+  
+  .vs-hero__ele1 {
+    display: none !important;
+  }
+  
+  .hero-stats {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    margin-top: 2rem !important;
+  }
+  
+  .vs-hero__character {
+    display: none !important;
+  }
+  
+  .vs-hero__image {
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin-top: 2rem !important;
+    max-width: 300px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Fix scroll issues on mobile */
+@media (max-width: 768px) {
+  .feedback-slider {
+    overflow: visible !important;
+    height: auto !important;
+  }
+  
+  .swiper-wrapper {
+    height: auto !important;
+  }
+  
+  .feedback-block {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  .vs-footer {
+    overflow: visible !important;
+  }
+  
+  body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+}
+
+/* Performance Optimizations for Spectacles Section */
+.vs-pro--area.parallax-wrap {
+  will-change: auto !important;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.vs-pro--area .title-anime {
+  will-change: auto !important;
+}
+
+.vs-pro--area .swiper-wrapper {
+  will-change: auto !important;
+}
+
+.vs-pro--area .wow {
+  will-change: auto !important;
+}
+
+/* Disable heavy animations on scroll for better performance */
+@media (prefers-reduced-motion: no-preference) {
+  .vs-pro--area .parallax-element {
+    will-change: auto !important;
+    transform: translateZ(0);
+  }
+}
+
+/* Simplified Newsletter Section Styles */
+.newsletter-section {
+  background: linear-gradient(135deg, #BDCF00 0%, #A5D6A7 100%);
+  padding: 60px 0;
+  position: relative;
+}
+
+.newsletter-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.newsletter-text {
+  flex: 1;
+  text-align: left;
+}
+
+.newsletter-title {
+  font-family: var(--vs-title-font);
+  font-size: 2.5rem;
+  color: var(--vs-theme-color1);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.newsletter-subtitle {
+  font-family: var(--vs-body-font);
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+}
+
+.newsletter-input-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 15px 20px 15px 50px;
+  border: 2px solid var(--vs-theme-color1);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: var(--vs-body-font);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.newsletter-input:focus {
+  border-color: var(--vs-theme-color2);
+  box-shadow: 0 0 0 3px rgba(189, 207, 0, 0.2);
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-input-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #BDCF00;
+  pointer-events: none;
+}
+
+.newsletter-btn {
+  background: var(--vs-theme-color1);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--vs-body-font);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  background: var(--vs-theme-color2);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(189, 207, 0, 0.3);
+}
+
+.newsletter-decorations {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 60px;
+  background: var(--vs-yellow-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.newsletter-decorations::before {
+  content: '📧';
+}
+
+@media (max-width: 768px) {
+  .newsletter-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 1.5rem;
+  }
+  
+  .newsletter-text {
+    text-align: center;
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    gap: 1rem;
+  }
+  
+  .newsletter-input-wrapper {
+    width: 100%;
+  }
+  
+  .newsletter-btn {
+    width: 100%;
+  }
+  
+  .newsletter-decorations {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
 }
 
 /*------------------- 1.5. Reset -------------------*/
@@ -7911,13 +8214,13 @@ blockquote.vs-quote .quote-author {
   transform-origin: center center;
 }
 .vs-service:hover .vs-service__figure::after {
-  background-color: rgba(var(--vs-theme-color2-rgb), 0.4);
+  background-color: rgba(189, 207, 0, 0.4);
 }
 .vs-service:hover .vs-service__image {
   transform: scale(1.01);
 }
 .vs-service:hover .vs-service__link {
-  background-color: var(--vs-theme-color2);
+  background-color: #BDCF00;
   color: var(--vs-white-color);
   border: 2px dashed rgba(var(--vs-white-color-rgb), 0.5);
 }
@@ -9920,13 +10223,13 @@ blockquote.vs-quote .quote-author {
   transform: rotate(121deg);
 }
 .vs-class__icon--color2 {
-  background-color: var(--vs-theme-color4);
+  background-color: #BDCF00;
 }
 .vs-class__icon--color3 {
-  background-color: var(--vs-theme-color3);
+  background-color: #D4E157;
 }
 .vs-class__icon--color4 {
-  background-color: var(--vs-theme-color2);
+  background-color: #C8E6C9;
 }
 .vs-class__content {
   padding: 60px 0 0 0;
@@ -14077,3 +14380,129 @@ body.color-mode {
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* ===================================
+   CUSTOM BRAND TYPOGRAPHY & COLORS
+=================================== */
+
+/* Apply new typography system */
+h1, h2, h3, h4, h5, h6,
+.vs-title,
+.section-title,
+.hero-title,
+.page-title {
+  font-family: var(--vs-title-font) !important;
+  font-weight: 700;
+  color: var(--vs-title-color);
+}
+
+body, p, span, div,
+.vs-text,
+.body-text {
+  font-family: var(--vs-body-font) !important;
+  color: var(--vs-body-color);
+}
+
+/* Testimonials and quotes with handwriting font */
+.testimonial-text,
+.quote-text,
+.testimonial blockquote,
+.vs-testimonial .testimonial-text,
+.feedback-text,
+.review-text {
+  font-family: var(--vs-handwriting-font) !important;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+/* Primary buttons and CTAs with lime green */
+.vs-btn,
+.btn-primary,
+.theme-btn,
+.vs-btn.style1,
+.cta-btn {
+  background-color: var(--vs-theme-color1) !important;
+  border-color: var(--vs-theme-color1) !important;
+  color: var(--vs-white-color) !important;
+}
+
+.vs-btn:hover,
+.btn-primary:hover,
+.theme-btn:hover {
+  background-color: #9db300 !important;
+  border-color: #9db300 !important;
+}
+
+/* Secondary backgrounds with pastels */
+.bg-secondary,
+.section-bg-alt {
+  background-color: var(--vs-theme-color2) !important;
+}
+
+.bg-accent {
+  background-color: var(--vs-theme-color3) !important;
+}
+
+.bg-lavender {
+  background-color: var(--vs-theme-color4) !important;
+}
+
+/* Text colors for better contrast */
+.text-primary {
+  color: var(--vs-theme-color1) !important;
+}
+
+.text-secondary {
+  color: var(--vs-theme-color2) !important;
+}
+
+/* Flying Paper Airplane Animation */
+@keyframes flyingPaperPlane {
+  0% {
+    transform: translate(-100px, 50px) rotate(-5deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translate(200px, -30px) rotate(10deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(500px, 20px) rotate(-8deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: translate(800px, -40px) rotate(12deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(1200px, 30px) rotate(-5deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes floatingMotion {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.vs-session--ele2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.vs-session--ele2 img {
+  animation: flyingPaperPlane 8s ease-in-out infinite, floatingMotion 3s ease-in-out infinite;
+  transform-origin: center center;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  transition: all 0.3s ease;
+}
+
+.vs-session--ele2 img:hover {
+  animation-play-state: paused;
+  transform: scale(1.1);
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.2));
+}

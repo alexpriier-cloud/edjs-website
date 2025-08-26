@@ -20,9 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Set recipient and subject
-    $to = "info@vecuro.com";
-    $subject = "New Submission from Website";
-    $headers = "From: Website Form <no-reply@" . $_SERVER['SERVER_NAME'] . ">";
+    $to = "your-email@example.com"; // UPDATE THIS WITH YOUR EMAIL
+    $subject = "New Submission from Toddly Website";
+    $headers = "From: Toddly Website <no-reply@" . $_SERVER['SERVER_NAME'] . ">";
 
     if (mail($to, $subject, $email_content, $headers)) {
         http_response_code(200);

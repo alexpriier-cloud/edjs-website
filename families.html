@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>EDJS - Pour les Familles | Réservation en Ligne avec Carte CMI</title>
+  <meta name="author" content="EDJS">
+  <meta name="description" content="Réservez facilement vos spectacles en famille avec EDJS. Paiement sécurisé par carte CMI, plan de salle interactif, et politique de remboursement flexible.">
+  <meta name="keywords" content="spectacles familles Maroc, réservation en ligne, carte CMI, billets théâtre, plan de salle, remboursement">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <style>
+    /* Menu hover colors - target purple vertical elements */
+    .vs-svg-assets svg path {
+      fill: #7e8a01 !important;
+    }
+    
+    /* Button gradients */
+    .vs-btn,
+    .vs-btn-primary,
+    button[type="submit"] {
+      background: linear-gradient(135deg, #BDCF00 0%, #7e8a01 100%) !important;
+      border: none !important;
+      color: white !important;
+    }
+    
+    .vs-btn:hover,
+    .vs-btn-primary:hover,
+    button[type="submit"]:hover {
+      background: linear-gradient(135deg, #7e8a01 0%, #BDCF00 100%) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(126, 138, 1, 0.3);
+    }
+    
+    /* Bigger logos */
+    .vs-header__logo .logo,
+    .header-logo .logo {
+      height: 55px !important;
+    }
+    
+    .mobile-logo .logo {
+      height: 65px !important;
+    }
+    
+    .preloader-inner img {
+      height: 80px !important;
+    }
+    
+    .vs-footer__logo img {
+      height: 60px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <button class="vs-btn preloaderCls">Cancel Preloader</button>
+    <div class="preloader-inner">
+      <img src="assets/img/edjs logo black@4x.png" alt="EDJS" style="height: 60px; width: auto;">
+      <span class="loader"></span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="vs-menu-wrapper">
+    <div class="vs-menu-area text-center">
+      <div class="mobile-logo">
+        <a href="index.html"><img src="assets/img/edjs logo black@4x.png" alt="EDJS" class="logo" style="height: 50px; width: auto;"></a>
+        <button class="vs-menu-toggle">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="vs-mobile-menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À Propos</a></li>
+          <li><a href="spectacles.html">Spectacles</a></li>
+          <li><a href="sessions.html">Séances</a></li>
+          <li class="menu-item-has-children">
+            <a href="#">Services</a>
+            <ul class="sub-menu">
+              <li><a href="schools.html">Écoles</a></li>
+              <li><a href="associations.html">Associations</a></li>
+              <li><a href="families.html">Familles</a></li>
+              <li><a href="partners.html">Partenaires</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-contact-info" style="padding: 20px; border-top: 1px solid #eee; margin-top: 20px;">
+          <h4 style="color: #7e8a01; margin-bottom: 15px; font-size: 16px;">EDJS - Culture Pour Tous</h4>
+          <p style="font-size: 14px; margin-bottom: 10px; color: #666;">Connecter la culture au Maroc à travers des spectacles théâtraux pour écoles, associations, familles et partenaires.</p>
+          <div style="margin-bottom: 8px;">
+            <i class="fa-solid fa-envelope" style="color: #7e8a01; margin-right: 8px;"></i>
+            <a href="mailto:contact@edjs.ma" style="color: #333; text-decoration: none; font-size: 14px;">contact@edjs.ma</a>
+          </div>
+          <div style="margin-bottom: 8px;">
+            <i class="fa-solid fa-phone" style="color: #7e8a01; margin-right: 8px;"></i>
+            <a href="tel:+212522123456" style="color: #333; text-decoration: none; font-size: 14px;">+212 522 123 456</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-whatsapp" style="color: #7e8a01; margin-right: 8px;"></i>
+            <a href="https://wa.me/212522123456" style="color: #333; text-decoration: none; font-size: 14px;">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="vs-header header-layout1">
+    <div class="sticky-wrapper">
+      <div class="sticky-active">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+              <div class="header-logo">
+                <a href="index.html"><img src="assets/img/edjs logo black@4x.png" alt="EDJS" class="logo" style="height: 45px; width: auto;">
+              </div>
+            </div>
+            <div class="col-auto">
+              <nav class="main-menu d-none d-lg-block">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="about.html">À Propos</a></li>
+                  <li><a href="spectacles.html">Spectacles</a></li>
+                  <li><a href="sessions.html">Séances</a></li>
+                  <li class="menu-item-has-children">
+                    <a href="#">Services</a>
+                    <ul class="sub-menu">
+                      <li><a href="schools.html">Écoles</a></li>
+                      <li><a href="associations.html">Associations</a></li>
+                      <li><a href="families.html">Familles</a></li>
+                      <li><a href="partners.html">Partenaires</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </nav>
+              <button class="vs-menu-toggle d-inline-block d-lg-none">
+                <i class="fal fa-bars"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="vs-main">
+    <!-- Page Title -->
+    <div class="breadcumb-wrapper" data-bg-src="assets/img/bg/breadcumb-bg.jpg">
+      <div class="container">
+        <div class="breadcumb-content">
+          <h1 class="breadcumb-title">Pour les Familles</h1>
+          <ul class="breadcumb-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li>Pour les Familles</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Families Services Section -->
+    <section class="space">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="vs-title text-center">
+              <span class="vs-title__sub">Réservation Familiale</span>
+              <h2 class="vs-title__main">Spectacles pour <span>Familles</span></h2>
+              <p>Découvrez et réservez facilement vos spectacles en famille avec EDJS</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- How to Browse Shows -->
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-6">
+            <div class="vs-service h-100">
+              <div class="vs-service__figure">
+                <img class="vs-service__image" src="assets/edjs img/Casse-Noisette_Web_007.webp" alt="Parcourir les spectacles">
+              </div>
+              <div class="vs-service__content">
+                <div class="vs-service__header">
+                  <span class="vs-service__icon">
+                    <i class="fa-solid fa-search"></i>
+                  </span>
+                </div>
+                <h3 class="vs-service__heading">Parcourir les Spectacles</h3>
+                <ul class="vs-list">
+                  <li><strong>Catalogue complet</strong> de nos productions</li>
+                  <li>Filtres par âge, ville, et date</li>
+                  <li>Descriptions détaillées</li>
+                  <li>Photos et vidéos</li>
+                  <li>Recommandations d'âge</li>
+                </ul>
+                <div class="vs-service__bottom">
+                  <a href="spectacles.html" class="vs-btn">
+                    <span class="vs-btn__border"></span>Voir les Spectacles
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- How to Buy Tickets -->
+          <div class="col-lg-6">
+            <div class="vs-service h-100">
+              <div class="vs-service__figure">
+                <img class="vs-service__image" src="assets/edjs img/Casse-Noisette_Web_048-1024x683.webp" alt="Acheter des billets">
+              </div>
+              <div class="vs-service__content">
+                <div class="vs-service__header">
+                  <span class="vs-service__icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                  </span>
+                </div>
+                <h3 class="vs-service__heading">Acheter des Billets</h3>
+                <ul class="vs-list">
+                  <li><strong>Paiement sécurisé</strong> par carte CMI</li>
+                  <li>Billets QR instantanés</li>
+                  <li>Confirmation par email/SMS</li>
+                  <li>Sauvegarde dans votre compte</li>
+                  <li>Support client dédié</li>
+                </ul>
+                <div class="vs-service__bottom">
+                  <a href="sessions.html" class="vs-btn">
+                    <span class="vs-btn__border"></span>Réserver Maintenant
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seat Map System -->
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-6">
+            <div class="vs-service h-100">
+              <div class="vs-service__figure">
+                <img class="vs-service__image" src="assets/edjs img/Casse-Noisette_Web_013-1024x683.webp" alt="Plan de salle">
+              </div>
+              <div class="vs-service__content">
+                <div class="vs-service__header">
+                  <span class="vs-service__icon">
+                    <i class="fa-solid fa-map"></i>
+                  </span>
+                </div>
+                <h3 class="vs-service__heading">Plan de Salle</h3>
+                <ul class="vs-list">
+                  <li><strong>Sélection interactive</strong> des places</li>
+                  <li>Vue en temps réel des disponibilités</li>
+                  <li>Catégories de prix claires</li>
+                  <li>Recommandations de placement</li>
+                  <li>Accessibilité PMR indiquée</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Refund Policy -->
+          <div class="col-lg-6">
+            <div class="vs-service h-100">
+              <div class="vs-service__figure">
+                <img class="vs-service__image" src="assets/edjs img/Casse-Noisette_Web_017-1024x683.webp" alt="Politique de remboursement">
+              </div>
+              <div class="vs-service__content">
+                <div class="vs-service__header">
+                  <span class="vs-service__icon">
+                    <i class="fa-solid fa-shield-alt"></i>
+                  </span>
+                </div>
+                <h3 class="vs-service__heading">Politique de Remboursement</h3>
+                <ul class="vs-list">
+                  <li><strong>Modification gratuite</strong> jusqu'à 27h avant</li>
+                  <li>Remboursement intégral si annulation EDJS</li>
+                  <li>Report possible selon disponibilités</li>
+                  <li>Conditions claires et transparentes</li>
+                  <li>Support client réactif</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking Process -->
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="vs-title text-center">
+              <span class="vs-title__sub">Processus de Réservation</span>
+              <h3 class="vs-title__main">Comment <span>Réserver</span></h3>
+            </div>
+            
+            <div class="row gy-4">
+              <div class="col-md-3">
+                <div class="vs-process text-center">
+                  <div class="vs-process__icon">
+                    <span class="vs-process__number">1</span>
+                    <i class="fa-solid fa-calendar"></i>
+                  </div>
+                  <h4 class="vs-process__title">Choisir</h4>
+                  <p>Sélectionnez votre spectacle et séance</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="vs-process text-center">
+                  <div class="vs-process__icon">
+                    <span class="vs-process__number">2</span>
+                    <i class="fa-solid fa-chair"></i>
+                  </div>
+                  <h4 class="vs-process__title">Places</h4>
+                  <p>Sélectionnez vos places sur le plan de salle</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="vs-process text-center">
+                  <div class="vs-process__icon">
+                    <span class="vs-process__number">3</span>
+                    <i class="fa-solid fa-credit-card"></i>
+                  </div>
+                  <h4 class="vs-process__title">Payer</h4>
+                  <p>Paiement sécurisé par carte CMI</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="vs-process text-center">
+                  <div class="vs-process__icon">
+                    <span class="vs-process__number">4</span>
+                    <i class="fa-solid fa-qrcode"></i>
+                  </div>
+                  <h4 class="vs-process__title">Billets</h4>
+                  <p>Recevez vos billets QR instantanément</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment Info -->
+            <div class="mt-5">
+              <div class="vs-title text-center">
+                <h4 class="vs-title__main">Moyens de <span>Paiement</span></h4>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="payment-info text-center">
+                    <div class="payment-cards mb-4">
+                      <i class="fa-brands fa-cc-visa fa-3x mx-2"></i>
+                      <i class="fa-brands fa-cc-mastercard fa-3x mx-2"></i>
+                      <i class="fa-solid fa-credit-card fa-3x mx-2"></i>
+                    </div>
+                    <p class="lead">Paiement 100% sécurisé avec les cartes bancaires marocaines (CMI)</p>
+                    <ul class="vs-list text-start">
+                      <li>Cryptage SSL 256 bits</li>
+                      <li>Conformité PCI DSS</li>
+                      <li>Aucune donnée bancaire stockée</li>
+                      <li>Confirmation immédiate</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer-bg.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <div class="widget-about">
+              <div class="footer-logo">
+                <img src="assets/img/edjs logo black@4x.png" alt="EDJS" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
+              </div>
+              <p class="about-text">EDJS connecte la culture avec les écoles, associations et familles au Maroc.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <h3 class="widget-title">Contact</h3>
+            <div class="vs-widget-about">
+              <p><i class="fa-solid fa-envelope"></i> info@edjs.ma</p>
+              <p><i class="fa-solid fa-phone"></i> +212 6XX XXX XXX</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-widget">
+            <h3 class="widget-title">Liens Rapides</h3>
+            <div class="footer-links">
+              <ul>
+                <li><a href="privacy.html">Politique de Confidentialité</a></li>
+                <li><a href="terms.html">Conditions d'Utilisation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-wrap">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-auto">
+            <p class="copyright-text">Copyright © 2025 <a href="index.html">EDJS</a>. Tous droits réservés.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Files -->
+  <script src="assets/js/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Fallback preloader hide in case GSAP fails
+    $(document).ready(function() {
+      setTimeout(function() {
+        $('.preloader').fadeOut();
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
